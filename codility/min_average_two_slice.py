@@ -3,7 +3,7 @@ import sys
 
 def solution(A):
     """
-    https://app.codility.com/demo/results/trainingB955CC-PHS/
+    https://app.codility.com/demo/results/training3K95ND-KGH/
     100%
     Idea-
     Idea is to calculate the prefix some and find out the average as per given formula in this problem and determine minimum slice starting index
