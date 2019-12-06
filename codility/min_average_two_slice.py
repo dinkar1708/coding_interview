@@ -78,34 +78,39 @@ print("Solution " + str(result))
 
 """
     Run - 
+    [4, 2, 2, 5, 1, 5, 8]
     [4, 6, 8, 13, 14, 19, 27]
-    From P:slice_p= 0  To Q: i= 1
-    slice length 
-    2
-    average 3.0
-    this item index is less than min average 
-    1
-    From P:slice_p= 1  To Q: i= 2
-    slice length 
-    2
-    average 2.0
-    From P:slice_p= 1  To Q: i= 3
-    slice length 
-    3
-    average 3.0
-    From P:slice_p= 1  To Q: i= 4
-    slice length 
-    4
-    average 2.5
-    this item index is less than min average 
-    4
-    From P:slice_p= 4  To Q: i= 5
-    slice length 
-    2
-    average 3.0
-    From P:slice_p= 4  To Q: i= 6
-    slice length 
-    3
-    average 4.666666666666667
-    Sol 1
+    From P:slice_p_from_index= 0  To Q: i= 1 slice [4, 2]
+    Slice length 2
+    min_avg 3.0
+    Index = 1 Item 2
+    min index found....Item < min_avg, slice_p_from_index changed to Index
+    
+    From P:slice_p_from_index= 1  To Q: i= 2 slice [2, 2]
+    Slice length 2
+    min_avg 2.0
+    Index = 2 Item 2
+    
+    From P:slice_p_from_index= 1  To Q: i= 3 slice [2, 2, 5]
+    Slice length 3
+    min_avg 2.0
+    Index = 3 Item 5
+    
+    From P:slice_p_from_index= 1  To Q: i= 4 slice [2, 2, 5, 1]
+    Slice length 4
+    min_avg 2.0
+    Index = 4 Item 1
+    min index found....Item < min_avg, slice_p_from_index changed to Index
+    
+    From P:slice_p_from_index= 4  To Q: i= 5 slice [1, 5]
+    Slice length 2
+    min_avg 2.0
+    Index = 5 Item 5
+    
+    From P:slice_p_from_index= 4  To Q: i= 6 slice [1, 5, 8]
+    Slice length 3
+    min_avg 2.0
+    Index = 6 Item 8
+    
+    Solution 1
 """
