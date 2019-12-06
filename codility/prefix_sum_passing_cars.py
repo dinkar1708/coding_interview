@@ -5,9 +5,9 @@ def solution(A):
     Idea-
     Before - we can just use two loops and for each zero count number of 1 in second loop big o n2
 
-    But lets use prefix some to do it in linear time-
+    But lets use prefix sum to do it in linear time-
     As per question explanation we have to find the total pairs of ones with zeros towards east direction ie. right to left
-    In order to find that we can use prefix some ie.
+    In order to find that we can use prefix sum ie.
     prefix_sum = for any index it represents the total number of cars, which can not pass to any of its right side cars
     #               reason is only east moving car can pass to other cars as per problem statement
 
@@ -21,7 +21,7 @@ def solution(A):
     west<<<<<------>>>>>>>east
     0->>> travels east(passes 3 cars) 1 0->>> travels east(passes 2 cars) 1 1
     0 1 0 1 1
-    for first zero do prefix some if current is 1 add with previous value
+    for first zero do prefix sum if current is 1 add with previous value
     0 1 1 2 3
 
     Problem-
