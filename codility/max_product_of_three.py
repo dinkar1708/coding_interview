@@ -17,8 +17,8 @@ def solution(A):
     A.sort()
     print("Input      " + str(A))
     len_ar = len(A)
-    # max would be either last three item multiplication or
-    # first two
+    # first two and last item multiplication or
+    # max would be last three item multiplication
     print("First two and last multiplication - ")
     print(A[0] * A[1] * A[len_ar - 1])
     print("Last 3 multiplication - ")
