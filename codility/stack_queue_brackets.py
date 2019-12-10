@@ -60,10 +60,11 @@ def solution(S):
     return 0
 
 
-# result = solution("{[()()]}")
-result = solution("([)()]")
-print("")
-print("Solution " + str(result))
+if __name__ == '__main__':
+    # result = solution("{[()()]}")
+    result = solution("([)()]")
+    print("")
+    print("Solution " + str(result))
 
 """
     ['{']
