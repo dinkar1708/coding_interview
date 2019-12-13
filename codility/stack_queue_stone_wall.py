@@ -57,7 +57,7 @@ Used blocks-
         # Remove all blocks that are bigger than current height, stack should not be empty
         while stack and stack[-1] > height:
             stack.pop()
-        print("After remove bigger blocks than current height " + str(stack))
+        print("After remove bigger blocks than current height, stack is " + str(stack))
 
         # stack is not empty and top item of stack is equal to current height
         if stack and stack[-1] == height:
@@ -81,47 +81,47 @@ if __name__ == '__main__':
 """
 Current Height 8
 Current stack []
-After remove bigger blocks than current height []
+After remove bigger blocks than current height, stack is []
 Add this block.... 8 Minimum Blocks 1
  
 Current Height 8
 Current stack [8]
-After remove bigger blocks than current height [8]
+After remove bigger blocks than current height, stack is [8]
 Already used this size of block 8
  
 Current Height 5
 Current stack [8]
-After remove bigger blocks than current height []
+After remove bigger blocks than current height, stack is []
 Add this block.... 5 Minimum Blocks 2
  
 Current Height 7
 Current stack [5]
-After remove bigger blocks than current height [5]
+After remove bigger blocks than current height, stack is [5]
 Add this block.... 7 Minimum Blocks 3
  
 Current Height 9
 Current stack [5, 7]
-After remove bigger blocks than current height [5, 7]
+After remove bigger blocks than current height, stack is [5, 7]
 Add this block.... 9 Minimum Blocks 4
  
 Current Height 8
 Current stack [5, 7, 9]
-After remove bigger blocks than current height [5, 7]
+After remove bigger blocks than current height, stack is [5, 7]
 Add this block.... 8 Minimum Blocks 5
  
 Current Height 7
 Current stack [5, 7, 8]
-After remove bigger blocks than current height [5, 7]
+After remove bigger blocks than current height, stack is [5, 7]
 Already used this size of block 7
  
 Current Height 4
 Current stack [5, 7]
-After remove bigger blocks than current height []
+After remove bigger blocks than current height, stack is []
 Add this block.... 4 Minimum Blocks 6
  
 Current Height 8
 Current stack [4]
-After remove bigger blocks than current height [4]
+After remove bigger blocks than current height, stack is [4]
 Add this block.... 8 Minimum Blocks 7
 
 Solution 7
