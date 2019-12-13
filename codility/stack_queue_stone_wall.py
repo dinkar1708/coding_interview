@@ -25,7 +25,7 @@ def solution(H):
 
     This is just example with height, see steps of output for details
      skip8           skip7
-                |           |
+                |
     |           |   |       |
     |       |   |   |       |
     |       |   |   |       |
