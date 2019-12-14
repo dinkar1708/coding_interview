@@ -7,10 +7,11 @@ def largest_sum(arr):
     :param arr:
     :return:
     """
-    max_ending_here = 0
-    max_so_far = 0
+    max_ending_here = arr[0]
+    max_so_far = arr[0]
 
-    for item in arr:
+    for i in range(1, len(arr)):
+        item = arr[i]
         # max with adding current item
         max_ending_here = max(item, max_ending_here + item)
         # take the maximum from max so far and max ending here
