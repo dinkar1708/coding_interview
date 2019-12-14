@@ -12,10 +12,7 @@ def largest_sum(arr):
 
     for item in arr:
         # max with adding current item
-        max_ending_here = max_ending_here + item
-        # reset to zero if less than zero
-        if max_ending_here < 0:
-            max_ending_here = 0
+        max_ending_here = max(item, max_ending_here + item)
         # take the maximum from max so far and max ending here
         max_so_far = max(max_ending_here, max_so_far)
     return max_so_far
