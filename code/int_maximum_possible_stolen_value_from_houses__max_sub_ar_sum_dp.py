@@ -54,6 +54,7 @@ def max_profit(A):
         print(dp)
         print("DP value: " + str(dp[i]))
 
+    # return the last value of array
     return dp[-1]
 
 
