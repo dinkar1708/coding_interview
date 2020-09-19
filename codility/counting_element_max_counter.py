@@ -17,6 +17,8 @@ def solution(N, A):
     for i, item in enumerate(A):
         # take item from original array one by one - 1 - minus due to using item as index
         item_as_counter_index = item - 1
+        print("operation...")
+        print(item_as_counter_index)
         # print(item_as_counter_index)
         # print(counter)
         # print(local_max)
@@ -29,6 +31,8 @@ def solution(N, A):
             # track the status of global_max counter so far
             # this is operation K
             global_max = max(global_max, counter[item_as_counter_index])
+            print("global max")
+            print(global_max)
         #         if A[K] = N + 1 then operation K is max counter.
         elif item == N + 1:
             # now operation k is as local max
@@ -36,9 +40,11 @@ def solution(N, A):
             # we can do using for loop for array length but that will cost bigo n2 complexity
             # example -  for i, item in A: counter[i] = global_max
             local_max = global_max
+            print("local max")
+            print(local_max)
         # print("global_max each step")
         # print(global_max)
-
+        print(counter)
     # print("local max so far....")
     # print(local_max)
     # print("counter - ")
@@ -51,8 +57,50 @@ def solution(N, A):
     return counter
 
 
-result = solution(1, [3, 4, 4, 6, 1, 4, 4])
+result = solution(5, [3, 4, 4, 6, 1, 4, 4])
 print("Sol " + str(result))
+
+"""
+Logs to understand the code
+operation...
+2
+global max
+1
+[0, 0, 1, 0, 0]
+operation...
+3
+global max
+1
+[0, 0, 1, 1, 0]
+operation...
+3
+global max
+2
+[0, 0, 1, 2, 0]
+operation...
+5
+local max
+2
+[0, 0, 1, 2, 0]
+operation...
+0
+global max
+3
+[3, 0, 1, 2, 0]
+operation...
+3
+global max
+3
+[3, 0, 1, 3, 0]
+operation...
+3
+global max
+4
+[3, 0, 1, 4, 0]
+Sol [3, 2, 2, 4, 2]
+
+"""
+
 
 """
 You are given N counters, initially set to 0, and you have two possible operations on them:
