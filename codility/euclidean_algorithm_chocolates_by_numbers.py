@@ -1,3 +1,4 @@
+# https://app.codility.com/demo/results/trainingJSH8MZ-AUW/
 def solution(N, M):
     """
     DINAKAR
