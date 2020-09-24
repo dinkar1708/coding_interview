@@ -38,7 +38,8 @@ def solution(A):
             # we already know they are in sorted order by start position
             intersections += active_circles
             active_circles += 1
-            print("This is start disc -> intersections " + str(intersections) + " active_circles " + str(active_circles))
+            print(
+                "This is start disc -> intersections " + str(intersections) + " active_circles " + str(active_circles))
         # ending circle position found, now active circle should be reduced by one
         else:
             print("Closing disc found.....")
@@ -52,44 +53,12 @@ def solution(A):
     return intersections
 
 
-def solution4(A):
-    """
-    this is without using lamda function
-    """
-    print("Right edges")
-    end_pos = [k + v for k, v in enumerate(A)]
-    print(end_pos)
-    end_pos.sort()
-    print(end_pos)
-    print("Left edges")
-    start_pos = [k - v for k, v in enumerate(A)]
-    print(start_pos)
-    start_pos.sort()
-    print(start_pos)
-    print("Sorted right and left edges")
-    print(end_pos)
-    print(start_pos)
-    left_position = 0
-    counter = 0
-    for right_position, v in enumerate(end_pos):
-        print()
-        print("For right_position       " + str(right_position) + str(A[right_position:]))
-        while left_position < len(end_pos) and v >= start_pos[left_position]:
-            print("this left position       " + str(left_position) + str(A[left_position:]))
-            counter += left_position - right_position
-            print("Counter till now         " + str(counter))
-            left_position += 1
-        if counter > 10 ** 7:
-            return -1
-
-    return counter
-
-
 result = solution([1, 5, 2, 1, 4, 0])
 print("")
 print("Solution " + str(result))
 
 """
+solution_(A - steps run---
     Original disc positions [(-1, True), (1, False), (-4, True), (6, False), (0, True), (4, False), (2, True), (4, False), (0, True), (8, False), (5, True), (5, False)]
     Sorted disc positions [(-4, True), (-1, True), (0, True), (0, True), (1, False), (2, True), (4, False), (4, False), (5, True), (5, False), (6, False), (8, False)]
     This is start disc -> intersections 0 active_circles 1
@@ -98,24 +67,24 @@ print("Solution " + str(result))
     This is start disc -> intersections 6 active_circles 4
     Closing disc found.....
     Reduce active circle 4
-    
+
     This is start disc -> intersections 9 active_circles 4
     Closing disc found.....
     Reduce active circle 4
-    
+
     Closing disc found.....
     Reduce active circle 3
-    
+
     This is start disc -> intersections 11 active_circles 3
     Closing disc found.....
     Reduce active circle 3
-    
+
     Closing disc found.....
     Reduce active circle 2
-    
+
     Closing disc found.....
     Reduce active circle 1
-    
-    
+
+
     Solution 11
 """
