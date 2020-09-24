@@ -2,16 +2,11 @@ def solution(A):
     """
     https://app.codility.com/demo/results/training2UMZQJ-4F5/
     100%
-    Problem-
-    contains the following example triplets:
-
-        (0, 1, 2), product is −3 * 1 * 2 = −6
-        (1, 2, 4), product is 1 * 2 * 5 = 10
-        (2, 4, 5), product is 2 * 5 * 6 = 60
-
-    Your goal is to find the maximal product of any triplet
-    the function should return 60, as the product of triplet (2, 4, 5) is maximal.
-
+    Idea is sort the array, in sorted array we can check for maximum product including negative numbers and maximum
+    product of positive numbers
+    max negative case - two negative numbers produces positive result so for maximum we should take biggest negative
+    number and take one biggest positive number
+    max positive case - three biggest positive numbers
     """
     # sort using n log n
     A.sort()
@@ -20,8 +15,10 @@ def solution(A):
     # first two and last item multiplication or
     # max would be last three item multiplication
     print("First two and last multiplication - ")
+    # max negative case
     print(A[0] * A[1] * A[len_ar - 1])
     print("Last 3 multiplication - ")
+    # max positive case
     print(A[len_ar - 1] * A[len_ar - 2] * A[len_ar - 3])
     return max(A[0] * A[1] * A[len_ar - 1],
                A[len_ar - 1] * A[len_ar - 2] * A[len_ar - 3])
