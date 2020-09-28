@@ -1,3 +1,4 @@
+# https://app.codility.com/demo/results/training2YYU6Z-2PP/
 def solution(A):
     """
     Complexity - n long n
@@ -6,6 +7,16 @@ def solution(A):
     100%
 
     Idea is to sort the array and check for triplet condition
+
+    P<=Q<=R
+    5   8   10
+    i   i+1 i+2
+
+    i plus, i+1 > i+2   ie. P+Q > R
+    5 plus 8 > 10
+
+    8+10 > 5 - always true - due to sorted
+    10+5 > 8 - always true - due to sorted
 
     :param A:
     :return: total counts

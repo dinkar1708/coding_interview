@@ -1,8 +1,8 @@
-def solution(N):
+def solution_(N):
     """
     https://app.codility.com/demo/results/trainingWH96Z8-RSB/
 
-    Idea is until number is event increase the count
+    The Idea is, until number is event increase the count
     until number is odd keep state of longest number and reset the current longest
     :param n =
     :return:
@@ -81,5 +81,36 @@ def solution(N):
     return longest_binary_gap
 
 
-result = solution(162)
+# https://app.codility.com/demo/results/trainingYFYXH8-JYY/
+def solution(N):
+    """
+    DINAKAR
+    convert to binary and find gap by just knowing the entry of 1 and remember the last index of 1
+    also remember the longest in each iteration when 1 is encountered
+    """
+    longest = -1
+    last_longest_index = 0
+    ar = bin(N).replace("0b", "")
+    print(ar)
+    for i in range(len(ar)):
+        if ar[i] == "1":
+            print("1 found...at index " + str(i))
+            longest = max(longest, i - last_longest_index - 1)
+            last_longest_index = i
+            print("current longest " + str(longest))
+    return 0 if longest == -1 else longest
+
+
+result = solution(1041)
 print("Sol " + str(result))
+
+"""
+10000010001
+1 found...at index 0
+current longest -1
+1 found...at index 6
+current longest 5
+1 found...at index 10
+current longest 5
+Sol 5
+"""
