@@ -66,3 +66,48 @@ print(q_arr)
 solution(array, q_arr, len(array), len(q_arr), 2)
 print("Output")
 print(array)
+
+"""
+Dry run.....
+
+Input A:
+[1, 2, 3, 4]
+Input range:
+[[0, 2], [1, 3], [2, 3]]
+Process for range  0 2
+After process range first element of range.....sum
+[2, 0, 0, 0]
+(query_array[i][1] + 1) < lenA)  2
+Decrement value at i  0 for  2
+After process first and second element of range.....sum
+[2, 0, 0, -2]
+Process for range  1 3
+After process range first element of range.....sum
+[2, 2, 0, -2]
+After process first and second element of range.....sum
+[2, 2, 0, -2]
+Process for range  2 3
+After process range first element of range.....sum
+[2, 2, 2, -2]
+After process first and second element of range.....sum
+[2, 2, 2, -2]
+Original array  [1, 2, 3, 4]
+Sum array  [2, 2, 2, -2]
+Cumulative sum at each step......
+[2, 4, 2, -2]
+Cumulative sum at each step......
+[2, 4, 6, -2]
+Cumulative sum at each step......
+[2, 4, 6, 4]
+Original array  [3, 2, 3, 4]
+Cumulative sum array  [2, 4, 6, 4]
+Adding single sum corresponding to array original value  A[i] and sum[i] 2 4
+[2, 4, 6, 4]
+Adding single sum corresponding to array original value  A[i] and sum[i] 3 6
+[2, 4, 6, 4]
+Adding single sum corresponding to array original value  A[i] and sum[i] 4 4
+[2, 4, 6, 4]
+Output
+[3, 6, 9, 8]
+
+"""
