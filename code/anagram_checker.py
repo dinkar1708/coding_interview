@@ -1,5 +1,10 @@
 def solution(A, B):
     """
+    Problem - https://www.geeksforgeeks.org/check-whether-two-strings-are-anagram-of-each-other/
+    Idea - count for each character of both strings to be exactly same counts
+    take temporary storage, store count of all character of first string, 
+    in same temporary storage, remove count of all character of second string, 
+    at the end count for each character must be zero
     :param A:
     :return:
     """
