@@ -25,7 +25,8 @@ def is_palindrome_2(n):
     """
     number_as_list = list(str(n))
     for n in number_as_list:
-        # check if current item is not equal to last itme in the list
+        # check if current item is not equal to last item in the list
+        print("List at each iteration...", number_as_list)
         if n != number_as_list.pop():
             return False
     return True
