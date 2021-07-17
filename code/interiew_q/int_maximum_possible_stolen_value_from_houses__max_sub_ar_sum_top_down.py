@@ -1,8 +1,15 @@
-def max_profit(A, i, n, dp, memo_table):
+def max_profit_top_down(A, i, n, dp, memo_table):
     """
     Problem statement and some more details-
     https://medium.com/outco/how-to-solve-the-house-robber-problem-f3535ebaef1b
     https://www.geeksforgeeks.org/maximum-sum-such-that-no-two-elements-are-adjacent-set-2/
+
+    Property -
+    Base  - F(0) / F(n) - 0 
+    Main - F(i)  -    max( F(i+1),  F(i) + F(i+2) )
+
+    Time - o(n)
+    Space - o(1)
 
     memo_table - keep track of if problem is solved or not
     dp - calculate the max profit value, ie. keep the profit propagating from right to left
@@ -65,8 +72,8 @@ def max_profit(A, i, n, dp, memo_table):
     # Required recurrence relation
     # skip the current house -> max_profit(A, i + 1, n, dp, memo_table)
     # choose the current house -> A[i] + max_profit(A, i + 2, n, dp, memo_table)
-    dp[i] = max(max_profit(A, i + 1, n, dp, memo_table),
-                A[i] + max_profit(A, i + 2, n, dp, memo_table))
+    dp[i] = max(max_profit_top_down(A, i + 1, n, dp, memo_table),
+                A[i] + max_profit_top_down(A, i + 2, n, dp, memo_table))
 
     # Returning the value
     print("For each i: " + str(i))
@@ -76,17 +83,14 @@ def max_profit(A, i, n, dp, memo_table):
     return dp[i]
 
 
-# A = [5, 5, 10, 100, 10, 5]
-
-# A = [6, 7, 1, 3, 8, 2, 4]
-A = [4, 1, 5, 1, 8, 1]
+A = [6, 7, 1, 3, 8, 2, 4]
 print(A)
 len_ar = len(A)
 
 memo_table = [0 for i in range(len_ar)]
-dp = [0 for j in range(len_ar)]
+dp = [0]*len_ar
 
-result = max_profit(A, 0, len_ar, dp, memo_table)
+result = max_profit_top_down(A, 0, len_ar, dp, memo_table)
 print("Max Profit " + str(result))
 
 """
@@ -94,39 +98,44 @@ Dry run -
 Input -
 [4, 1, 5, 1, 8, 1]
 Steps-
-
+[6, 7, 1, 3, 8, 2, 4]
 Memoization table i: 0
-[1, 0, 0, 0, 0, 0]
+[1, 0, 0, 0, 0, 0, 0]
 Memoization table i: 1
-[1, 1, 0, 0, 0, 0]
+[1, 1, 0, 0, 0, 0, 0]
 Memoization table i: 2
-[1, 1, 1, 0, 0, 0]
+[1, 1, 1, 0, 0, 0, 0]
 Memoization table i: 3
-[1, 1, 1, 1, 0, 0]
+[1, 1, 1, 1, 0, 0, 0]
 Memoization table i: 4
-[1, 1, 1, 1, 1, 0]
+[1, 1, 1, 1, 1, 0, 0]
 Memoization table i: 5
-[1, 1, 1, 1, 1, 1]
-Base case...i:6
+[1, 1, 1, 1, 1, 1, 0]
+Memoization table i: 6
+[1, 1, 1, 1, 1, 1, 1]
+Base case...i:7
+Base case...i:8
+For each i: 6
+[0, 0, 0, 0, 0, 0, 4]
+DP value: 4
 Base case...i:7
 For each i: 5
-[0, 0, 0, 0, 0, 1]
-DP value: 1
-Base case...i:6
+[0, 0, 0, 0, 0, 4, 4]
+DP value: 4
 For each i: 4
-[0, 0, 0, 0, 8, 1]
-DP value: 8
+[0, 0, 0, 0, 12, 4, 4]
+DP value: 12
 For each i: 3
-[0, 0, 0, 8, 8, 1]
-DP value: 8
+[0, 0, 0, 12, 12, 4, 4]
+DP value: 12
 For each i: 2
-[0, 0, 13, 8, 8, 1]
+[0, 0, 13, 12, 12, 4, 4]
 DP value: 13
 For each i: 1
-[0, 13, 13, 8, 8, 1]
-DP value: 13
+[0, 19, 13, 12, 12, 4, 4]
+DP value: 19
 For each i: 0
-[17, 13, 13, 8, 8, 1]
-DP value: 17
-Max Profit 17
+[19, 19, 13, 12, 12, 4, 4]
+DP value: 19
+Max Profit 19
 """
