@@ -59,6 +59,7 @@ def max_profit(A):
 
 
 A = [6, 7, 1, 3, 8, 2, 4]
+# steal 6, 1, 8 and 4 from the house.
 print(A)
 result = max_profit(A)
 print("Max Profit " + str(result))
