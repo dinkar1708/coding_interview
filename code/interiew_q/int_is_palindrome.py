@@ -1,5 +1,7 @@
 def is_palindrome(n):
     """
+    Time - o(n)
+    Space - o(1)
     Reverse number and check with current number
     :param n:
     :return:
@@ -19,6 +21,8 @@ def is_palindrome(n):
 
 def is_palindrome_2(n):
     """
+    Time - o(n)
+    Space - o(1)
     Check for first and last value of int digit
     :param n:
     :return:
@@ -39,7 +43,7 @@ if output:
 else:
     print("Not palindrome")
 
-output = is_palindrome_2(121)
+output = is_palindrome_2(1211)
 
 if output:
     print("Palindrome")
