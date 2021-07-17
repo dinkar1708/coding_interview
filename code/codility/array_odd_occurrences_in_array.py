@@ -14,3 +14,7 @@ def solution(ar):
 arr = [9, 3, 9, 3, 5]
 result = solution(arr)
 print("Sol " + str(result))
+"""
+Output
+Sol 5
+"""
