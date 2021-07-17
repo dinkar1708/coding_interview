@@ -11,7 +11,7 @@ def coin_change_top_down(amounts_param, amount):
     for coin in amounts_param:
         for x in range(coin, amount + 1):
             dp[x] += dp[x - coin]
-    print(dp)
+        print("for coin ", coin, dp)
     return dp[amount]
 
 amounts = [1,2,5]

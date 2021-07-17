@@ -8,7 +8,7 @@ def fact(n):
 
 def fact_memoization(ar, n):
     """
-    Top down aproach
+    Top down approach
     https://www.geeksforgeeks.org/tabulation-vs-memoization/
     """
     if n == 0:
