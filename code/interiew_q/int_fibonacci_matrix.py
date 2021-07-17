@@ -65,3 +65,9 @@ def fib_formula(n):
 print(fib_matrix(31))
 
 print(fib_formula(31))
+
+"""
+[[1346269, 832040], [832040, 514229]]
+1346269
+1346269
+"""
