@@ -16,9 +16,10 @@ def solution(A, B):
     temp_storage = [0] * 256
     for c in A:
         temp_storage[ord(c)] += 1
+    print("First storage ", temp_storage)
     for c in B:
         temp_storage[ord(c)] -= 1
-
+    print("After remove first second array counts ", temp_storage)
     for num in temp_storage:
         # greater than zero
         if num:
@@ -27,5 +28,5 @@ def solution(A, B):
 
 
 if __name__ == '__main__':
-    a = [2, 3, 1, 5]
-    print(solution("abc", "bca"))
+    print(solution("abc", "acb"))
+    print(solution("abc", "acbaabbbbgggyy"))
