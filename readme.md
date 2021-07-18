@@ -1,6 +1,8 @@
 ## coding_interview
  Coding Interview Questions
 ## Resources
+- Dynamic programming
+  - https://www.youtube.com/watch?v=nqowUJzG-iM&list=PL_z_8CaSLPWekqhdCPmFohncHwz8TY2Go&ab_channel=AdityaVerma
 - Excellent explanation here
   - https://www.youtube.com/watch?v=Zq4upTEaQyM&list=PLiQ766zSC5jM2OKVr8sooOuGgZkvnOCTI&index=1&ab_channel=BackToBackSWE
 - Explained some of codility questions
