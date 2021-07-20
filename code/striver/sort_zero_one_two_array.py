@@ -1,7 +1,7 @@
 def sort(numbers):
     """
     Sort zero one and two array 
-    Time - o(n)
+    Time - o(2n)= o(n) but two pass
     Space - o(1)
     """
     print("Count input in ", numbers)
@@ -11,7 +11,7 @@ def sort(numbers):
     for num in numbers:
         if num == 0:
             zero_count += 1
-        elif(num == 1):
+        elif num == 1:
             one_count += 1
         else:
             two_count += 1
