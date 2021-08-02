@@ -9,3 +9,5 @@
   - https://www.youtube.com/watch?v=sACjpw8BtTc&list=PLRq88ERCRTVbaPOTIKD5CTDiHfOFxvrKX&index=1
 - Coding interview quesitons byte by byte
   - https://www.youtube.com/watch?v=c0OMPDLef08&list=PLNmW52ef0uwsjnM06LweaYEZr-wjPKBnj&index=1&ab_channel=ByteByByte
+- 5 hours training on do
+  - https://youtu.be/oBt53YbR9Kk
