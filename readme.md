@@ -11,3 +11,5 @@
   - https://www.youtube.com/watch?v=c0OMPDLef08&list=PLNmW52ef0uwsjnM06LweaYEZr-wjPKBnj&index=1&ab_channel=ByteByByte
 - 5 hours training on do
   - https://youtu.be/oBt53YbR9Kk
+- Leet vode video solutions 
+  - https://youtu.be/U6-X_QOwPcs
