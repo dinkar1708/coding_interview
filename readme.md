@@ -12,4 +12,4 @@
 - 5 hours training on do
   - https://youtu.be/oBt53YbR9Kk
 - Leet vode video solutions 
-  - https://youtu.be/U6-X_QOwPcs
+  - https://youtube.com/playlist?list=PLU_sdQYzUj2keVENTP0a5rdykRSgg9Wp-
