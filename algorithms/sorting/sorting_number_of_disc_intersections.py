@@ -34,7 +34,7 @@ def solution(A):
     for _, is_beginning in circle_points:
         # active circle found ie. starting disc found
         if is_beginning:
-            # counting intersections by active circles ie. each active circle must be intersecting the comming new circle,
+            # counting intersections by active circles ie. each active circle must be intersecting the coming new circle,
             # we already know they are in sorted order by start position
             intersections += active_circles
             active_circles += 1

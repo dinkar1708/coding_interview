@@ -6,9 +6,9 @@ def solution(A):
     https://app.codility.com/demo/results/training3K95ND-KGH/
     100%
     Idea-
-    Idea is to calculate the prefix some and find out the average as per given formula in this problem and determine
+    Idea is to calculate the prefix sum and find out the average as per given formula in this problem and determine
     minimum slice starting index
-    # why prefix some? - just to calculate the some between two places without using two loops
+    # why prefix sum? - just to calculate the sum between two places without using two loops
 
     Find min average from P to Q in array and store the minimum index and say it as average of slice from p to q
     Objective is to find minimum average of other slice, the next slice can be [next q+1 and either include  p,q,q+1 p
@@ -37,7 +37,7 @@ def solution(A):
         print("From P:slice_p_from_index= " + str(slice_p_from_index) + "  To Q= " + str(q_end_index) + " slice " + str(
             A[slice_p_from_index:q_end_index + 1]))
         print("Slice length " + str(q_end_index - slice_p_from_index + 1))
-        # get the some for position P,Q - ie. from slice_p_from_index to i positions and davide by the slice length
+        # get the sum for position P,Q - ie. from slice_p_from_index to i positions and divide by the slice length
         average = (prefix_sum[q_end_index] - prefix_sum[slice_p_from_index] + A[slice_p_from_index]) / \
                   (q_end_index - slice_p_from_index + 1)
         # check for minimum average so far
