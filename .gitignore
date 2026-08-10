@@ -123,4 +123,28 @@ dmypy.json
 
 # Pyre type checker
 .pyre/
-.idea/workspace.xml
+
+# IDE - JetBrains
+.idea/
+
+# Kotlin / Gradle
+.gradle/
+build/
+.kotlin/
+*.jar
+*.class
+*.iml
+*.ipr
+*.iws
+.gradletasknamecache
+gradle-app.setting
+!gradle-wrapper.jar
+local.properties
+kotlin/algorithms/practise.kt
+kotlin/docs/
+*temporary.kt
+
+# Output directories
+outputs/
+
+
