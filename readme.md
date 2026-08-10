@@ -4,9 +4,25 @@ A comprehensive collection of coding interview problems and solutions in Kotlin,
 
 ## Repository Structure
 
+```
+coding_interview/
+├── kotlin/               - Kotlin implementations (primary)
+│   ├── src/main/kotlin/algorithms/  - All algorithm implementations
+│   ├── build.gradle.kts - Gradle build configuration
+│   └── README.md        - Kotlin-specific guide
+│
+├── python/              - Python implementations
+│   ├── algorithms/      - Core algorithm implementations
+│   ├── striver/         - Striver series problems
+│   └── codility/        - Codility practice problems
+│
+└── docs/
+    └── kotlin/docs/     - Comprehensive Kotlin documentation
+```
+
 This repository contains implementations in two languages:
 - **kotlin/** - Kotlin implementations (primary, with comprehensive documentation)
-- **algorithms/** - Python implementations (earlier versions)
+- **python/** - Python implementations
 
 ### kotlin/ - Kotlin Implementations
 
@@ -32,7 +48,7 @@ kotlin/src/main/kotlin/algorithms/
 
 #### Documentation
 ```
-kotlin/docs/
+docs/kotlin/docs/
 ├── kotlin-basics/     - Kotlin fundamentals (arrays, strings, maps, numbers)
 ├── algorithm-theory/  - Complexity analysis, DP patterns, sorting algorithms
 ├── data-structures/   - Trees, linked lists, graphs
@@ -41,28 +57,21 @@ kotlin/docs/
 └── README.md          - Complete documentation guide
 ```
 
-**Start here:** Read `kotlin/docs/README.md` for a complete guide to all documentation and study plans.
+**Start here:** Read `docs/kotlin/docs/README.md` for a complete guide to all documentation and study plans.
 
-### algorithms/ - Python Implementations
+### python/ - Python Implementations
 
-Earlier Python implementations with similar algorithm coverage:
-- Array manipulation, rotation, searching
-- Dynamic programming solutions
-- String problems, prefix sum, sorting
-- Greedy algorithms, stack/queue, recursion
-- Math problems, bit manipulation, sliding window
-
-### Other Folders
-
-- **code/** - Additional problem sets (Striver series)
-- **practice/** - Practice problems from various sources
+Python implementations organized by source:
+- **algorithms/** - Core algorithm implementations (arrays, DP, strings, sorting, etc.)
+- **striver/** - Striver series problem solutions
+- **codility/** - Codility practice problems
 
 ## Quick Start
 
 ### For Interview Preparation
-1. Navigate to `kotlin/docs/README.md` for the complete documentation index
-2. Review `kotlin/docs/interview-prep/problem-types-index.md` to identify problem patterns
-3. Study specific topics in `kotlin/docs/algorithm-theory/` and `kotlin/docs/data-structures/`
+1. Navigate to `docs/kotlin/docs/README.md` for the complete documentation index
+2. Review `docs/kotlin/docs/interview-prep/problem-types-index.md` to identify problem patterns
+3. Study specific topics in `docs/kotlin/docs/algorithm-theory/` and `docs/kotlin/docs/data-structures/`
 4. Practice with code in `kotlin/src/main/kotlin/algorithms/`
 
 ### Study Path
@@ -72,10 +81,10 @@ Earlier Python implementations with similar algorithm coverage:
 4. **Week 7+:** Mock interviews, company-specific problems
 
 ### By Problem Type
-- **Arrays:** `kotlin/docs/interview-prep/array-problems.md`
-- **Dynamic Programming:** `kotlin/docs/algorithm-theory/dp_patterns.md`
-- **Trees:** `kotlin/docs/data-structures/tree_interview_questions.md`
-- **Patterns:** `kotlin/docs/interview-prep/interview_patterns.md`
+- **Arrays:** `docs/kotlin/docs/interview-prep/array-problems.md`
+- **Dynamic Programming:** `docs/kotlin/docs/algorithm-theory/dp_patterns.md`
+- **Trees:** `docs/kotlin/docs/data-structures/tree_interview_questions.md`
+- **Patterns:** `docs/kotlin/docs/interview-prep/interview_patterns.md`
 
 ## Running Code
 
@@ -174,4 +183,4 @@ Or use the test scripts in `kotlin/outputs/` for batch testing.
 - **Complexity Reference:** Big O cheatsheet for all algorithms
 - **Interview Tips:** Communication strategies, common gotchas, time management
 
-See `kotlin/docs/README.md` for complete details.
+See `docs/kotlin/docs/README.md` for complete details.
