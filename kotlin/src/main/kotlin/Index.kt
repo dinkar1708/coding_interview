@@ -22,10 +22,11 @@
  *
  * 📚 Documentation:
  * ├── docs/
- * │   ├── techniques/        - Algorithm techniques and patterns
- * │   │   ├── hashmap-patterns.md
- * │   │   ├── prefix-sum-technique.md
- * │   │   └── sliding-window-dp-optimization.md
+ * │   ├── kotlin-basics/     - Kotlin fundamentals (arrays, strings, maps, numbers)
+ * │   ├── algorithm-theory/  - Complexity analysis, DP patterns, sorting algorithms
+ * │   ├── data-structures/   - Trees, linked lists, graphs
+ * │   ├── interview-prep/    - Problem patterns, tips, study plan
+ * │   ├── techniques/        - HashMap, sliding window, prefix sum
  * │   └── README.md
  *
  * 💡 Each file contains:

@@ -141,7 +141,6 @@ gradle-app.setting
 !gradle-wrapper.jar
 local.properties
 kotlin/algorithms/practise.kt
-kotlin/docs/
 *temporary.kt
 
 # Output directories
