@@ -169,16 +169,16 @@ Or use the test scripts in `kotlin/outputs/` for batch testing.
 
 ## Features
 
-- 100+ algorithm implementations in Kotlin
+- 90+ algorithm implementations in Kotlin
 - Comprehensive documentation covering all major topics
 - Problem pattern recognition guides
-- Multiple implementations for comparison (6+ rotation algorithms, 4+ fibonacci variations)
+- Multiple implementations for comparison (6 rotation algorithms, 6 fibonacci variations)
 - Interview preparation strategies and tips
 - Organized by technique, data structure, and problem type
 
 ## Documentation Highlights
 
-- **Complete DP Guide:** All 7 DP types (Fibonacci, Knapsack, LCS, LIS, Grid, State Machine, String)
+- **Complete DP Guide:** All 9 DP patterns (Fibonacci, 0/1 Knapsack, Unbounded Knapsack, LCS, LIS, Palindrome, MCM, Grids, State Machine)
 - **Problem Patterns:** 15 common interview patterns with recognition tips
 - **Complexity Reference:** Big O cheatsheet for all algorithms
 - **Interview Tips:** Communication strategies, common gotchas, time management

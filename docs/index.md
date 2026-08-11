@@ -32,20 +32,20 @@ docs/
 
 ### Key Topics
 - **[Interview Patterns](kotlin/docs/interview-prep/interview_patterns.md)** - 15 common patterns
-- **[Dynamic Programming Guide](kotlin/docs/algorithm-theory/dp_patterns.md)** - All 7 DP types
+- **[Dynamic Programming Guide](kotlin/docs/algorithm-theory/dp_patterns.md)** - All 9 DP patterns
 - **[Problem Types Index](kotlin/docs/interview-prep/problem-types-index.md)** - Organized by category
 - **[Complexity Cheatsheet](kotlin/docs/algorithm-theory/algorithms_complexity_cheatsheet.md)** - Big O reference
 
 ### Kotlin Basics
-- **[Arrays in Kotlin](kotlin/docs/kotlin-basics/Arrays-in-Kotlin.md)**
-- **[Strings in Kotlin](kotlin/docs/kotlin-basics/Strings-in-Kotlin.md)**
-- **[Maps in Kotlin](kotlin/docs/kotlin-basics/Maps-in-Kotlin.md)**
-- **[Number Iteration](kotlin/docs/kotlin-basics/Number-Iteration-in-Kotlin.md)**
+- **[Arrays in Kotlin](kotlin/docs/kotlin-basics/arrays-in-kotlin.md)**
+- **[Strings in Kotlin](kotlin/docs/kotlin-basics/strings-in-kotlin.md)**
+- **[Maps in Kotlin](kotlin/docs/kotlin-basics/maps-in-kotlin.md)**
+- **[Number Iteration](kotlin/docs/kotlin-basics/number-iteration-in-kotlin.md)**
 
 ### Interview Preparation
-- **[Study Plan](kotlin/docs/interview-prep/study-plan.md)** - Structured learning path
-- **[Interview Tips](kotlin/docs/interview-prep/interview-tips.md)** - Communication & strategy
 - **[Array Problems](kotlin/docs/interview-prep/array-problems.md)** - Common array questions
+- **[Problem Types Index](kotlin/docs/interview-prep/problem-types-index.md)** - Organized by category
+- **[Interview Patterns](kotlin/docs/interview-prep/interview_patterns.md)** - 15 common patterns
 
 ## Getting Started
 
